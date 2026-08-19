@@ -10,6 +10,13 @@ Turn up to six GitHub links into one deduplicated Star batch. A direct
 `https://github.com/owner?tab=repositories` link contributes only the public
 repositories returned on the first API page; never paginate.
 
+If the user supplies a plain `https://github.com/owner` profile, do not pass it
+to the helper or change GitHub. Propose the exact normalized
+`https://github.com/owner?tab=repositories` URL and obtain explicit user
+confirmation before generating the preview. That normalization confirmation is
+not permission to Star: after previewing, obtain a separate confirmation for
+the exact resolved repository list.
+
 Resolve `scripts/github_bulk_star.py` relative to this `SKILL.md` and run it by
 absolute path rather than reproducing the API loop manually:
 
