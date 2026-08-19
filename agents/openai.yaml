@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Bulk Star"
+  short_description: "Preview and Star repositories from six GitHub links"
+  default_prompt: "Use $github-bulk-star to preview and Star repositories from these GitHub links."
